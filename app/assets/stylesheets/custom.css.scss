@@ -1,0 +1,84 @@
+@import "bootstrap";
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align:center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
+
+#homepage{
+  margin-bottom: 10%;
+}
+
+hr {
+  margin-bottom: 4%;
+}
+
+ul {
+  list-style: none;
+}
+
+.navbar {
+  height: 10%;
+  background-color: green;
+  font-size: 150%;
+  color: black;
+}
+
+.row {
+  text-align: left;
+}
+
+li {
+  padding-top: 10%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 400%;
+  color: black;
+}
+
+.authentication {
+  background-color: black;
+  border-radius: 8px;
+  width: 25%;
+  font-size: 400%;
+  text-align: center;
+  padding-bottom: 2%;
+  margin-bottom: 5%;
+}
+
+.form {
+  font-size: 100%;
+  text-align: left;
+}
+
+#submit {
+  margin-top: 3%;
+}
+
+.fields {
+  border-radius: 4px;
+  width: 20%;
+}
