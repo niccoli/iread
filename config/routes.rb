@@ -5,8 +5,10 @@ Iread::Application.routes.draw do
 
   resources :users
   resources :sessions
+  resources :authors
   resources :books
+  resources :readings
   resources :categories
 
-  root :to => 'users#index'
+  root :to => 'categories#index'
 end
