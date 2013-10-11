@@ -6,4 +6,5 @@ class User < ActiveRecord::Base
   validates :password_digest, :presence => true
 
   has_many :readings
+  has_many :books
 end

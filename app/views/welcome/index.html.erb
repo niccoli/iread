@@ -1,2 +1,6 @@
 <h1>Lose Yourself. Read.</h1>
 
+<% if current_user %>
+<hr>
+<p><%= link_to 'Check out Your Book Shelf', books_path %></p>
+<% end %>

@@ -11,8 +11,21 @@ class BooksController < ApplicationController
   end
 
   def create
-    Book.create(book_params)
-    redirect_to books_path
+    @book = Book.create(book_params)
+    @book.user_id = current_user.id
+    @books = Book.all
+    if @book.save
+      flash[:notice] = "Your book has been added to your shelf."
+      redirect_to books_path
+    else
+      render :new
+    end
+  end
+
+  def destroy
+    @book = Book.find(params[:id])
+    @book.destroy
+    flash[:notice] = "You have deleted this book from your shelf."
   end
 
 private

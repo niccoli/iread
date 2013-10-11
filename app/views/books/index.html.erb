@@ -1,7 +1,15 @@
 <h1>All Books</h1>
 
-<ul>
-  <% @books.each do |book| %>
-    <li><%= book.title %></li>
-  <% end %>
-</ul>
+<div id="book_list">
+  <div class="row">
+    <% @books.each do |book| %>
+      <hr>
+      <div class="col-md-6"><%= book.title %></div>
+    <% end %>
+  </div>
+  <hr>
+  <p><%= link_to 'Add a New Book to Your Shelf', new_book_path %></p>
+</div>
+
+
+
